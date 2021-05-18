@@ -1,0 +1,71 @@
+
+dell@Priya MINGW64 /d/devops/learngit (master)
+$ ls
+commands.txt
+
+dell@Priya MINGW64 /d/devops/learngit (master)
+$ gitstatus
+bash: gitstatus: command not found
+
+dell@Priya MINGW64 /d/devops/learngit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        commands.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+dell@Priya MINGW64 /d/devops/learngit (master)
+$ git add -A
+
+dell@Priya MINGW64 /d/devops/learngit (master)
+$ git commit
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'dell@Priya.(none)')
+
+dell@Priya MINGW64 /d/devops/learngit (master)
+$  git config --global user.email "you@example.com"
+
+dell@Priya MINGW64 /d/devops/learngit (master)
+$ git config --global user.email "priya.pnair701@gmail.com"
+
+dell@Priya MINGW64 /d/devops/learngit (master)
+$ git config --global user.name "priya p nair"
+
+dell@Priya MINGW64 /d/devops/learngit (master)
+$ git commit -m "my first commit"
+[master (root-commit) dae60ef] my first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 commands.txt
+
+dell@Priya MINGW64 /d/devops/learngit (master)
+$ git push origin master
+fatal: Response status code does not indicate success: 401 (Unauthorized).
+
+dell@Priya MINGW64 /d/devops/learngit (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 272 bytes | 272.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/priyapnair/learngit.git
+ * [new branch]      master -> master
+
+dell@Priya MINGW64 /d/devops/learngit (master)
