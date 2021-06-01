@@ -1,0 +1,60 @@
+ubuntu@ip-172-31-47-7:~$ cat > file1
+wish to study more^X
+exit
+
+ctrl + D is used to exit 
+ubuntu@ip-172-31-47-7:~$ cat > f2 {open f3 in write mode}
+second file
+ubuntu@ip-172-31-47-7:~$ cat file1 f2 >f3 {file1 and f2 appended redirected to f3}
+ubuntu@ip-172-31-47-7:~$ cat f3
+wish to study more
+exit
+
+second file
+
+ubuntu@ip-172-31-47-7:~$ cat >> f3
+appended new contentubuntu@ip-172-31-47-7:~$ cat f3
+wish to study more
+exit
+
+second file
+
+appended new contentubuntu@ip-172-31-47-7:~$ cat f3 > f4{copy from one file to another}
+ubuntu@ip-172-31-47-7:~$ cat f4
+wish to study more
+exit
+
+second file
+appended new contentubuntu@ip-172-31-47-7:~$ cat f4
+wish to study more
+exit
+
+second file
+To reverse the data of the file (tac)
+tac file1
+
+appended new contentubuntu@ip-172-31-47-7:~$ tac f4
+appended new contentsecond file
+
+exit
+wish to study more
+
+output redirection
+
+ubuntu@ip-172-31-47-7:~$ cat < f3
+wish to study more
+exit
+
+second file
+appended new contentubuntu@ip-172-31-47-7:~$ cat f4 < f3
+wish to study more
+exit
+
+second file
+appended new contentubuntu@ip-172-31-47-7:~$ cat f4
+wish to study more
+exit
+
+second file
+
+
