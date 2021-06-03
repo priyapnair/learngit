@@ -130,6 +130,128 @@ $
 Changes the group of the given file to special group
 ubuntu@ip-172-31-47-7:~$ chgrp ubuntu pp
 
+which command gives path of exe commands
+
+ubuntu@ip-172-31-47-7:~$ which ls
+/usr/bin/ls
+
+Which command with multiple arguments
+ubuntu@ip-172-31-47-7:~$ which ls cat
+/usr/bin/ls
+/usr/bin/cat
+info command is same as man
+info ls
+ubuntu@ip-172-31-47-7:~$ info ls
+ubuntu@ip-172-31-47-7:~$
+ubuntu@ip-172-31-47-7:~$ info ls
+ubuntu@ip-172-31-47-7:~$
+Linux head command
+The 'head' command displays the starting content of a file. By default, it displays starting 10 lines of any file.
+
+Syntax:
+
+head <file name>  
+ubuntu@ip-172-31-47-7:~$ head f2
+sdcsdcsdcsdc
+dcsdfsdf
+
+
+fss
+
+sdfsdf
+
+
+
+ubuntu@ip-172-31-47-7:~$ head -2 f2
+sdcsdcsdcsdc
+dcsdfsdf
+Head command for multiple files
+If we'll write two file names then it will display first ten lines (in this case file has five lines only) of each file separated by a heading.
+
+Syntax:
+
+head <file name> <file name>
+ubuntu@ip-172-31-47-7:~$ head f2 f3
+==> f2 <==
+sdcsdcsdcsdc
+dcsdfsdf
+
+
+fss
+
+sdfsdf
+
+
+
+
+==> f3 <==
+wish to study more
+exit
+
+second file
+Linux tail command
+Linux tail command is used to display the last ten lines of one or more files. Its main purpose is to read the error message. 
+
+Syntax:
+tail <file name> 
+ubuntu@ip-172-31-47-7:~$ tail -3 f3
+
+second file
+appended new contentubuntu@ip-172-31-47-7:~$ tail -1 f3
+appended new contentubuntu@ip-172-31-47-7:~$ tail f3
+wish to study more
+exit
+
+second file
+Tail with other commands
+The tail command can be used with other commands. It can be piped to other commands to filter the output. Consider the below command:
+
+ls -t /etc | tail -n 6 
+appended new contentubuntu@ip-172-31-47-7:~$ tail -1 f3
+appended new contentubuntu@ip-172-31-47-7:~$ tail f3
+wish to study more
+exit
+
+second file
+appended new contentubuntu@ip-172-31-47-7:~$ tail -f f3
+wish to study more
+exit
+
+second file
+appended new content
+
+display line numbers 
+tubuntu@ip-172-31-47-7:~$ cat -n f3
+     1  wish to study more
+     2  exit
+     3
+     4  second file
+     5  appended new contentubuntu@ip-172-31-47-7:~$
+ubuntu@ip-172-31-47-7:~$ cat -b f3
+     1  wish to study more
+     2  exit
+
+     3  second file
+     4  appended new content
+
+ubuntu@ip-172-31-47-7:~$ cat -b f3
+     1  wish to study more
+     2  exit
+
+     3  second file
+     4  appended new content
+ubuntu@ip-172-31-47-7:~$ cat -e f3
+wish to study more^X$
+exit$
+$
+second file$
+
+
+
+ 
+
+
+
 
 
 
