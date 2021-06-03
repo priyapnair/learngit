@@ -56,5 +56,12 @@ wish to study more
 exit
 
 second file
+ubuntu@ip-172-31-47-7:~$ man more | more{q is used to exit from man}{first screen full of cntent displayed}
+who am i
+ubuntu@ip-172-31-47-7:~$
+ubuntu@ip-172-31-47-7:~$ who am i
+ubuntu   pts/0        2021-06-01 16:17 (116.68.104.238)
+
+
 
 
