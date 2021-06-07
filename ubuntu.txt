@@ -245,10 +245,127 @@ wish to study more^X$
 exit$
 $
 second file$
+We can get back to our home directory by executing the cd command without any argument. It will back to our home directory from any directory we are working on. Execute it as follows:
+
+cd  
+Consider the below output:
+
+Linux Home Directory
 
 
 
- 
+9) Change to Directory having Spaces
+To change the directory that has spaces in its name, surround the path with quotes (' ') or use the backslash (\) character with it. Execute the command as follows:
+
+cd 'Dir name with space'  [doubt]
+cd Dir\ name\ with\ space  
+The above commands will ignore the space from the directory name. Consider the below output:
+
+CD Command
+
+Linux Path Completion
+Path completion is a very helpful feature in any operating system. It is made to speed up your typing speed. You just have to hit 'Tab' key and your command, option or file name that is arguments will be automatically completed or will give you the options.
+
+For example, if you want to type 'cd Desktop' you can type 'cd De' and hit Tab. Your commnd will be automatically completed.
+
+But to work Tb key you have to type first letter correctly. For example, if you will type 'cd de' followed by Tab key then you won't get any result as there wil be no files starting from 'de' . 
+
+ubuntu@ip-172-31-47-7:~/pp/subpp$ ls -lh{size in kb }
+total 16K
+drwxrwxr-x 2 ubuntu ubuntu 4.0K Jun  7 14:51 data
+drwxrwxr-x 2 ubuntu ubuntu 4.0K Jun  7 14:47 fold
+drwxrwxr-x 2 ubuntu ubuntu 4.0K Jun  7 14:51 mine
+drwxrwxr-x 2 ubuntu ubuntu 4.0K Jun  7 14:47 new
+ubuntu@ip-172-31-47-7:~/pp/subpp$ ls -lhS
+total 16K
+drwxrwxr-x 2 ubuntu ubuntu 4.0K Jun  7 14:51 data
+drwxrwxr-x 2 ubuntu ubuntu 4.0K Jun  7 14:47 fold
+drwxrwxr-x 2 ubuntu ubuntu 4.0K Jun  7 14:51 mine
+drwxrwxr-x 2 ubuntu ubuntu 4.0K Jun  7 14:47 new
+ubuntu@ip-172-31-47-7:~/pp/subpp$ ls -l{size in bytes}
+total 16
+drwxrwxr-x 2 ubuntu ubuntu 4096 Jun  7 14:51 data
+drwxrwxr-x 2 ubuntu ubuntu 4096 Jun  7 14:47 fold
+drwxrwxr-x 2 ubuntu ubuntu 4096 Jun  7 14:51 mine
+drwxrwxr-x 2 ubuntu ubuntu 4096 Jun  7 14:47 new
+ubuntu@ip-172-31-47-7:~/pp$ ls -d */{list only subdirectories}
+d1/  d2/  parentpp/  pp/  subpp/
+ubuntu@ip-172-31-47-7:~/pp$
+ubuntu@ip-172-31-47-7:~$ ls -R{SHOWS DETAILS OF SUBDIRECTORIES}
+.:
+ f2   f3   f4   file1   filea   mm   myfirst   pf1   pf2   pf3   pp   sk  'skes^x  oyes'
+
+./pp:
+d1  d2  demch  firsttxteso  parentpp  pp  subpp
+
+./pp/d1:
+
+./pp/d2:
+
+./pp/parentpp:
+
+./pp/pp:
+m1
+
+./pp/pp/m1:
+m2
+
+./pp/pp/m1/m2:
+
+./pp/subpp:
+data  fold  mine  new
+
+./pp/subpp/data:
+
+./pp/subpp/fold:
+
+./pp/subpp/mine:
+rmdir -p
+This command will delete a directory including its sub-directories all at once. In below picture, all sub-directories have been deleted with 'rmdir -p' command.
+
+
+ubuntu@ip-172-31-47-7:~/pp$ rmdir -p pp/{delet only if dir is empty}
+rmdir: failed to remove 'pp/': Directory not empty
+ubuntu@ip-172-31-47-7:~/pp$ rmdir  pp/
+rmdir: failed to remove 'pp/': Directory not empty
+ubuntu@ip-172-31-47-7:~/pp$ rmdir subpp
+rmdir: failed to remove 'subpp': Directory not empty
+ubuntu@ip-172-31-47-7:~/pp$
+clear is used to clear the terminal
+
+Using Space As Delimiter
+If we want to use space as a delimiter, then we have to quote the space (' ') with the cut command. To cut the output by using space as delimiter, execute the command as follows:
+
+cut -d ' ' -f(columnNumber) <fileName>    
+Consider the following commands:
+
+cut -d ' ' -f2 exm.txt  
+cut -d ' ' -f5 exm.txt  
+
+ubuntu@ip-172-31-47-7:~/pp$ cut -d ' ' -f2 firsttxteso{-d is delimiter '' indicates space as delimiter
+file
+ubuntu@ip-172-31-47-7:~/pp$
+grep options
+grep -vM: The 'grep -v' command displays lines not matching to the specified word.
+Syntax:
+
+grep -v <searchWord> <fileName>  
+Example:
+
+grep -v 9 marks.txt  
+
+grep -i: The 'grep -i' command filters output in a case-insensitive way.
+Syntax:
+
+grep -i <searchWord> <fileName>  
+Example:
+
+grep -i red exm.txt  
+
+
+
+
+
 
 
 
