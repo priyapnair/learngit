@@ -362,6 +362,63 @@ Example:
 
 grep -i red exm.txt  
 
+printf is used to create a file by redirection
+
+buntu@ip-172-31-47-7:~$ printf "welcome" > test7.txt
+ubuntu@ip-172-31-47-7:~$ cat test7.txt
+welcomeubuntu@ip-172-31-47-7:~$
+
+echo is used to create file
+ubuntu@ip-172-31-47-7:~$ cat test7.txt
+welcomeubuntu@ip-172-31-47-7:~$ echo "priya " > test8
+ubuntu@ip-172-31-47-7:~$ cat test8
+priya
+
+3. Using the redirect (>) symbol
+We can also create a file using the redirect symbol (>) on the command line. To create a file, we just have to type a redirect symbol (>) followed by the file name. This symbol is mostly used to redirect the output. There are two ways to redirect the output. If we use > operator, it will overwrite the existing file, and >> operator will append the output.
+
+To create a file with redirect (>) operator, execute the command as follows:
+
+> test5.txt  
+ubuntu@ip-172-31-47-7:~$
+ubuntu@ip-172-31-47-7:~$ > test5
+ubuntu@ip-172-31-47-7:~$ cat test5
+ubuntu@ip-172-31-47-7:~$ ls test5
+test5
+The significant difference between touch and cat command is that using cat command, we can specify the content of the file from the command prompt comparatively the touch command creates a blank file.
+
+ubuntu@ip-172-31-47-7:~$ cat > test1
+jhsxihsxjsdh
+jnx^[kjnsj xs
+ubuntu@ip-172-31-47-7:~$ touch nnn
+Linux file command
+file command is used to determine the file type. It does not care about the extension used for file. It simply uses file command and tell us the file type. It has several options.
+
+Syntax:
+
+file <filename>  
+Example:
+
+file 1.png  
+
+ubuntu@ip-172-31-47-7:~$ file test1
+test1: ASCII text, with escape sequences
+
+Default sleep command
+The default sleep command will take time in seconds. Consider the below command:
+
+sleep 5  
+Change Case
+The 'tr' command can change case.
+
+Syntax:
+
+command | tr <'old'> <'new'>  
+Example:
+
+cat exm.txt | tr 'prcu' 'PRCU'  
+
+
 
 
 
