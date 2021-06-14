@@ -1,1 +1,1 @@
-ssh -i "learn-aws.pem" ubuntu@ec2-65-2-137-216.ap-south-1.compute.amazonaws.com
+ssh -i "learn-aws.pem" ec2-user@ec2-15-206-179-176.ap-south-1.compute.amazonaws.com

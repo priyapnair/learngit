@@ -1,0 +1,20 @@
+dell@Priya MINGW64 /d/devops/learngit (master)
+$ date +%r{TIME IN 12 HR}
+08:02:01 PM
+
+dell@Priya MINGW64 /d/devops/learngit (master)
+$ date +%R{TIME IN 24 HR}
+dell@Priya MINGW64 /d/devops/learngit (master)
+$ ls -R
+.:
+commands.txt  f4  newcomm.txt  p2/  p3/  pp/  ssh.txt  ubuntu.txt
+
+./p2:
+
+./p3:
+
+./pp:
+
+20:02
+history{shows all typed commands}
+!commandno{will execute that command}

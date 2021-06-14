@@ -1,0 +1,20 @@
+[ec2-user@ip-172-31-15-46 ~]$ cd pp
+[ec2-user@ip-172-31-15-46 pp]$ !!
+cd pp
+-bash: cd: pp: No such file or directory
+!! execute last command in history
+history the ctrl+r : type any character the last command in history with that character will be executed
+!m execute the last command starting with m in history
+export HISTTIMEFORMAT='%F %T'{WILL SHOW TIME AND DATE OF COMMANDS}
+  25  history -d 16
+   26  history
+   27  history -d 11
+   28  history
+[ec2-user@ip-172-31-15-46 pp]$ export HISTTIMEFORMAT='%F %T'
+[ec2-user@ip-172-31-15-46 pp]$ history
+    1  2021-06-14 14:39:44history
+    2  2021-06-14 14:39:44ls
+    3  2021-06-14 14:39:44ls -l
+[ec2-user@ip-172-31-15-46 pp]$ export HISTSIZE=0{DELETE HISTORY}
+echo $HISTFILESIZE
+SHOWS DEFAULT FILE SIZE 1000
