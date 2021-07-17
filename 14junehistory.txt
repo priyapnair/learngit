@@ -18,3 +18,37 @@ export HISTTIMEFORMAT='%F %T'{WILL SHOW TIME AND DATE OF COMMANDS}
 [ec2-user@ip-172-31-15-46 pp]$ export HISTSIZE=0{DELETE HISTORY}
 echo $HISTFILESIZE
 SHOWS DEFAULT FILE SIZE 1000
+
+
+
+dell@Priya MINGW64 /d/devops/learngit (master)
+$ echo hello > first
+
+dell@Priya MINGW64 /d/devops/learngit (master)
+$ cat hello
+
+cat: hello: No such file or directory
+
+dell@Priya MINGW64 /d/devops/learngit (master)
+$
+
+dell@Priya MINGW64 /d/devops/learngit (master)
+$ cat first
+hello
+
+dell@Priya MINGW64 /d/devops/learngit (master)
+$ echo welcome > first
+
+dell@Priya MINGW64 /d/devops/learngit (master)
+$ cat first { first hello is replaced by welcome}
+welcome
+
+dell@Priya MINGW64 /d/devops/learngit (master)
+$ echo appended >> first { here append is performed}
+
+dell@Priya MINGW64 /d/devops/learngit (master)
+$ cat first
+welcome
+appended
+
+
